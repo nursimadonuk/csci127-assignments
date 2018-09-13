@@ -1,4 +1,5 @@
-def didit(name)
-    return name "completed this problem"
+def didit(name):
+    
+    print ( name, "completed this problem")
     name ="steve"
-print (didit())
+print (didit(name))

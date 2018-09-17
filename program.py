@@ -1,11 +1,9 @@
 def capitalize (name):
-    name = 'nursima donuk'
     cap = name.title()
     return cap
 print (capitalize('nursima donuk'))
 
 def init (name):
-    name = 'nursima donuk'
     my_name = name.title()
     f = my_name[0]
     l = my_name[8:]
@@ -14,7 +12,6 @@ def init (name):
 print (init('nursima donuk'))
 
 def part_pig_latin (name):
-    name = 'hello'
     g = name[0] + 'ay'
     h = name[1:]
     a = h + g

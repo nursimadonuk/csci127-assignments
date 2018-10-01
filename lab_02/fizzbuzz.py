@@ -12,7 +12,7 @@ def fizzbuzz(max_value):
         elif count % 3 == 0 :
             print ('Fizz')
         else:
-            print (max_value)
+            print (count)
         count += 1
     return 'there are ' + str (max_value // 15) + ' FizzBuzzes printed'
 

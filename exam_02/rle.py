@@ -1,36 +1,17 @@
-"""def encode(s):
-    new_l = []
-    i = 0
- 
-    for letter in s:
-        count = 1
-        
-        while i < len(s)-1:
-            if s[i] == s[i+1]:
-                count += 1
-                i += 1
-            else:
-                count = count
-
-            new_l.append([s[i],count])
-            i += 1
-  
-    return new_l
-
-print(encode("abbaaacddaaa"))"""
-
-
-
-
 
 def encode(s):
     i = 0
     new_l = []
     while i < len(s)-1:
         count = 1
+        if i == len(s)-1:
+            if s[i] == s[i-1]:
+                new_l.append([s[i],count])
         if s[i] == s[i+1]:
             count += 1
             i+=1
+            if s[i] == s[i+1]:
+                count += 1
         elif s[i] != s[i+1]:
             count = count
         new_l.append([s[i],count])
@@ -38,11 +19,6 @@ def encode(s):
     return new_l
         
         
-            
-        
-                     
-
-
 print(encode("abbaaacddaaa"))
 print(encode("abcd"))
 
